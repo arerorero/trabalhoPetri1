@@ -1,4 +1,3 @@
-
 package com.mycompany.popo;
 
 import java.util.Scanner;
