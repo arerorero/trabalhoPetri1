@@ -23,17 +23,22 @@ public class popo {
            menu();
            resposta = scanner.nextInt();
             if (resposta == 1) {
+                System.out.println("Digite o Numero para ser inserido: ");
                 numero = scanner.nextInt();
                 vetor.insere(numero);
+                System.out.println("Numero "+ numero+" foi inserido");
           } if (resposta == 2) {
+                System.out.println("Digite de qual casa você quer remover o numero:");
                 numero = scanner.nextInt();
                 vetor.remove(numero);
           } if (resposta == 3) {
+                System.out.println("Digite de qual casa você quer ver o numero:");
                 numero = scanner.nextInt();
-                System.out.println(vetor.buscaElemento(numero));
+                System.out.println("O numero da casa: "+numero+ " é "+vetor.buscaElemento(numero));
           }
                 
         }
+        System.out.println("FIM");
         
     }
 }
